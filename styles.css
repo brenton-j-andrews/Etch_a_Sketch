@@ -14,9 +14,12 @@ body {
 }
 
 .cell {
-    background-color: blue;
+    background-color: white;
 }
 
+.hovered {
+    background-color: black;
+}
 .row {
     display: inline;
 }

@@ -7,3 +7,23 @@ Pseudocode:
 4. Within the 2nd loop, create new <div class="cell"> elements with DOM, default color: white with small border to distinguish.
 5. Each time 1st for-loop iterates, the created divs will drop down one column.
 6. Repeat all iterations, resulting in a grid structure on the webpage.
+
+Update: Have a fixed size grid created that reacts to hover events. 
+
+
+Step 2: Add a reset button that clears the old grid and draws it again with 
+same functionality.
+
+Pseudocode:
+1. Take code from step 1 and create createBlankGrid() function.
+2. Each time function is called, clear all elements from .container div for overwrite.
+3. Continue the function using the same logic from step 1.
+4. Outside of function, call createBlankGrid() to execute when program starts.
+5. Attach addEventListener to "reset" button that calls createBlankGrid() .
+6. Done!
+
+Step 3: Upon hitting reset button, add functionality that allows user to change 
+draw surface pixel count.
+
+Pseudocode:
+1. In html create input box for pixel count, deactivated. 

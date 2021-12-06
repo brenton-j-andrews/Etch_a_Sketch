@@ -1,0 +1,9 @@
+Step 1: Create a webpage containing a 16*16 grid of divs, which can produce grids of other sizes as well up 100*100.
+
+Pseudocode:
+1. Initialize grid demension variable "pixel_count". Default value will be 16.
+2. Initialize a for-loop that iterates "pixel_count" times. This loop generate each row.
+3. Initiialize a 2nd for-loop that iterates "pixel_count" times. This loop will generate each column.
+4. Within the 2nd loop, create new <div class="cell"> elements with DOM, default color: white with small border to distinguish.
+5. Each time 1st for-loop iterates, the created divs will drop down one column.
+6. Repeat all iterations, resulting in a grid structure on the webpage.

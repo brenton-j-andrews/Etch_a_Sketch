@@ -1,8 +1,6 @@
 // "Constants" that can be changed by user.
 // let count = Number(document.querySelector("#pixel_input").value);
-let count = 16;
-console.log(typeof(count));
-let pixel_count = count;
+let pixel_count = 16;
 let pixel_width = 800 / pixel_count;
 console.log(pixel_width);
 
@@ -27,7 +25,16 @@ function createBlankGrid() {
     }
 }
 
+// function reset() clears the current sketch, prompts for new pixel count input and
+// calls createBlankGrid().
+function reset() {
+    pixel_count = Number(prompt(`Enter pixel count, current is ${pixel_count}: `, pixel_count));
+    pixel_width = 800 / pixel_count;
+    console.log(pixel_count, pixel_width);
+    createBlankGrid();
+}
+
 createBlankGrid();
 let reset_button = document.querySelector("#reset_button");
-reset_button.addEventListener("click", createBlankGrid);
-console.log(reset_button.textContent);
+reset_button.addEventListener("click", reset);
+

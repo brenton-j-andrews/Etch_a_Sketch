@@ -26,4 +26,8 @@ Step 3: Upon hitting reset button, add functionality that allows user to change
 draw surface pixel count.
 
 Pseudocode:
-1. In html create input box for pixel count, deactivated. 
+1. Create function reset(), which is called from the reset button click event.
+Inside reset()
+1. Get new value of "pixel-count" with user prompt.
+2. Set .container.innerHTML to empty.
+3. Call createBlankGrid() -> delete .container empty line in this function.
